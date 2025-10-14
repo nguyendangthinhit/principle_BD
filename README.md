@@ -13,5 +13,5 @@ Nội dung bài viết :<nội dung ở trỏng>
 ## note: nếu như bài viết là dạng ảnh thì mn phải tự thêm nội dung vào cho phù hợp nha
 mấy cái ở dưới
 tui có để 1 file mẫu cào dữ liệu cho mn coi đó. làm theo cái mẫu nớ
-trong đoạn code process_fb.py và process_web.py tui có hướng dẫn xử dụng cách sử dụng file nớ rồi ak, vào đó chạy code file đó rồi sẽ hiểu nha 😉
+trong đoạn code transfer_txt_json_web.py và transfer_txt_json_fb.py tui có hướng dẫn xử dụng cách sử dụng file nớ rồi ak, vào đó chạy code file đó rồi sẽ hiểu nha 😉
 ## Việc cuối cùng, file git này mn rút về máy sài xong, mỗi lần sài xong là update lên nghe (mấy file như file mẫu với file xử lí dữ liệu, xử lí link cấm mấy má chọt chọt chỉnh sửa à 🙂 )
