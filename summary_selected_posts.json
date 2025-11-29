@@ -1,0 +1,23 @@
+[{
+  "label":"Thống kê các thể loại commments trước và sau khi có kết quả của kì thi THPT 2025"
+},
+  {
+    "id": "Trước",
+    "result": {
+      "Đề khó": 2747,
+      "Thông cảm": 131,
+      "Chế giễu": 17,
+      "Đồng tình": 78
+    }
+  },
+  {
+    "id": "Sau",
+    "result": {
+      "Đề khó": 832,
+      "Chế giễu": 37,
+      "Đồng tình": 169,
+      "Thông cảm": 26,
+      "Quay xe":150
+    }
+  }
+]
