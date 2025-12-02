@@ -1,17 +1,91 @@
-# Folder chứa dữ liệu của nhóm
-Oke nha, đây là readme trong mục data thôi
-Mình nhắc lại workflow của việc cào dữ liệu của cả nhóm do có 1 chút thay đổi để phù hợp hơn mà tui chỉ trao đổi với vài người chớ mấy ak 🙃
-# Hiện tại tui mới làm về cào data fb thui nha, khi nào tới youtube báo này nọ thì mình báo lại sau
-## Trong file tui đã làm sẵn cho mn cái thư mục rồi ak, đặt tên rồi cào thôi chứ chả có gì 
-## Việc đầu tiên cần phải làm trước khi di cào đó là check xem cái link mà mình cào nó có bị trùng không đã nha mấy má, không check là cào trùng link nữa ak 🙂. Trong mục data sẽ có file links_fb.JSON và file check_link.py
-file links_fb.json là nơi chưa all link của mn, việc của mn là dùng code check_link để check coi link có tồn tại trong links_fb.json không, vào trong cái file check_link.py để xem cách sử dụng nhá
-## check link xong rồi thì bắt đầu đi cào,dữ liệu cào về sẽ có dạng 
-link : < link>
-....
-... cái ni coi mau.json
-Nội dung bài viết :<nội dung ở trỏng> 
-## note: nếu như bài viết là dạng ảnh thì mn phải tự thêm nội dung vào cho phù hợp nha
-mấy cái ở dưới
-tui có để 1 file mẫu cào dữ liệu cho mn coi đó. làm theo cái mẫu nớ
-trong đoạn code transfer_txt_json_web.py và transfer_txt_json_fb.py tui có hướng dẫn xử dụng cách sử dụng file nớ rồi ak, vào đó chạy code file đó rồi sẽ hiểu nha 😉
-## Việc cuối cùng, file git này mn rút về máy sài xong, mỗi lần sài xong là update lên nghe (mấy file như file mẫu với file xử lí dữ liệu, xử lí link cấm mấy má chọt chọt chỉnh sửa à 🙂 )
+📁 Folder chứa dữ liệu của nhóm
+
+⚠️ Nhớ pull dữ liệu về trước rồi hãy push nhaaaaaaaaaaaa!!!!!!!!!!!!!!!!!
+Tui nhắc lại workflow cào dữ liệu của cả nhóm (do có xíu thay đổi để hợp lý hơn). Tui chỉ nói với vài người nên mấy ak khác coi kỹ 🤭
+
+🔵 1. Ghi chú ban đầu
+
+Hiện tại tui mới làm phần cào data Facebook thui nha.
+Khi nào làm tới YouTube, báo – news – các kiểu thì tui sẽ cập nhật lại sau.
+
+Trong folder này tui đã chuẩn bị sẵn thư mục cho từng người rồi.
+Nhiệm vụ của mn: đặt tên đúng → cào đúng folder → xong.
+
+🔵 2. Kiểm tra link trước khi cào (rất quan trọng!!!)
+
+Việc đầu tiên mấy má phải làm trước khi đi cào dữ liệu:
+👉 Check xem link có bị trùng không.
+Không check → cào trùng → tốn thời gian → dữ liệu lỗi 😐
+
+Trong thư mục data/ sẽ có:
+
+links_fb.json – chứa toàn bộ link mọi người đã cào
+
+check_link.py – script để kiểm tra link đã tồn tại hay chưa
+
+Vào file check_link.py xem hướng dẫn sử dụng rồi chạy theo nha.
+
+🔵 3. Cấu trúc dữ liệu sau khi cào
+
+Sau khi check link xong thì bắt đầu đi cào.
+Dữ liệu thu được sẽ có dạng:
+
+link: <link>  
+...
+(nội dung file .json)
+...
+Nội dung bài viết: <nội dung ở trỏng>
+
+🔸 Note:
+
+Nếu bài viết là dạng hình ảnh → mn phải tự thêm nội dung mô tả cho phù hợp.
+
+Trong repo này đã có 1 file mẫu để mọi người tham khảo cách cào và cách format.
+Trong transfer_txt_json_web.py và transfer_txt_json_fb.py tui đã hướng dẫn cách xài rồi đó → mở lên chạy thử là hiểu 😌
+
+🔵 4. Lưu ý khi làm việc với Git
+
+Mấy file như:
+
+file mẫu,
+
+file xử lý dữ liệu,
+
+file xử lý link,
+
+👉 cấm sửa bậy nhaaa 🙂
+
+Quy tắc:
+
+Git repo này -> mn pull về
+
+Làm việc xong -> nhớ update lên liền
+
+Đừng để file lệch version gây lỗi cho cả team 🤝
+
+📌 Quy tắc đặt tên & định dạng dữ liệu
+
+Dữ liệu sau khi cào về lưu theo format:
+
+<tên người liên quan sự kiện>_<tên sự kiện>.json
+
+
+Và để vào đúng thư mục tên của mình.
+
+🧩 Các trường dữ liệu cần lấy (7 trường)
+
+Khi cào, nhớ lấy đủ 7 trường sau:
+
+acctachments
+
+comments
+
+text
+
+profileName
+
+postTitle
+
+parentRely
+
+likesCount, commentsCount
