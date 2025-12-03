@@ -1,24 +1,10 @@
 import os
-import sys
 import json
-
-# ====== CHỈNH LIST NÀY THEO TÊN NGƯỜI BẠN MUỐN XỬ LÝ ======
-NAMES = [
-    "hangdumuc",
-    "quanglinh",
-    "thuytien",
-    "mailisa",
-    "hoanghuong",
-    "sharkbinh"
-    # thêm tên khác ở đây...
-]
-# =========================================================
-
 
 def parse_filename(filename):
     """
-    Tách 'hangdumuc_thua_nhan_thieu_trach_nhiem.json' ->
-    person = 'hangdumuc', event_id = 'thua_nhan_thieu_trach_nhiem'
+    Tách 'ten_nguoi_su_kien.json' ->
+    person = 'ten_nguoi', event = 'su_kien'
     """
     if not filename.lower().endswith(".json"):
         return None, None
@@ -27,29 +13,55 @@ def parse_filename(filename):
     if "_" not in base:
         return None, None
 
-    person, event = base.split("_", 1)
+    parts = base.split("_", 1)
+    person = parts[0]
+    event = parts[1] if len(parts) > 1 else ""
+    
     return person, event
 
 
-def collect_events_from_dirs(dirs):
+def remove_empty_comments(data):
     """
-    dirs: list thư mục cần scan, ví dụ ['thien', 'duy']
-    return: dict theo format đã mô tả
+    Xóa field 'comments': [] rỗng trong tất cả các comment
     """
-    result = {}
+    if isinstance(data, dict):
+        # Xóa field "comments" nếu nó rỗng
+        if "comments" in data and not data["comments"]:
+            data.pop("comments", None)
+        
+        # Đệ quy xử lý các giá trị con
+        for key, value in list(data.items()):
+            remove_empty_comments(value)
+    
+    elif isinstance(data, list):
+        # Đệ quy xử lý từng phần tử trong list
+        for item in data:
+            remove_empty_comments(item)
+    
+    return data
 
-    # init sẵn khung cho từng người trong NAMES
-    for name in NAMES:
-        result[name] = {
-            "name": name,
-            "events": []
-        }
+
+def collect_events_from_dirs():
+    """
+    Scan 3 thư mục: duy/FilteredDetails, huy, thien
+    Gộp theo cấu trúc: name -> events
+    """
+    dirs = [
+        "duy/FilteredDetails",
+        "huy", 
+        "thien"
+    ]
+    
+    # Dictionary để lưu theo tên người
+    people_data = {}
 
     for folder in dirs:
         if not os.path.isdir(folder):
             print(f"Folder không tồn tại, bỏ qua: {folder}")
             continue
 
+        print(f"Đang xử lý thư mục: {folder}")
+        
         for entry in os.listdir(folder):
             if not entry.lower().endswith(".json"):
                 continue
@@ -59,45 +71,55 @@ def collect_events_from_dirs(dirs):
             file_path = os.path.join(folder, entry)
             person, event_id = parse_filename(entry)
 
-            # chỉ xử lý nếu person nằm trong NAMES
-            if person not in NAMES:
-                # bạn có thể print cảnh báo nếu muốn debug
-                # print(f"Bỏ qua file {file_path} vì '{person}' không trong NAMES")
+            if not person or not event_id:
+                print(f"Không parse được file: {entry}")
                 continue
 
             try:
                 with open(file_path, "r", encoding="utf-8") as f:
                     data = json.load(f)
+                
+                # Xóa tất cả "comments": [] rỗng
+                data = remove_empty_comments(data)
+                
             except Exception as e:
                 print(f"Lỗi đọc {file_path}: {e}")
                 continue
 
+            # Khởi tạo cấu trúc cho người này nếu chưa có
+            if person not in people_data:
+                people_data[person] = {
+                    "name": person,
+                    "events": []
+                }
+
+            # Thêm sự kiện
             event_obj = {
-                "event_id": event_id,
-                "file": entry,
-                "comments": data  # dữ liệu gốc trong file (list comment)
+                "event": event_id,
+                "comments": data
             }
 
-            result[person]["events"].append(event_obj)
+            people_data[person]["events"].append(event_obj)
+            print(f"  + Thêm: {person} - {event_id}")
 
-    return result
+    return people_data
 
 
 def main():
-    if len(sys.argv) < 2:
-        print("Cách dùng: python gop_su_kien.py <thu_muc_1> <thu_muc_2> ...")
-        print("Ví dụ:    python gop_su_kien.py thien duy")
-        return
+    print("Bắt đầu gộp file từ duy/FilteredDetails, huy, thien...")
+    
+    merged_data = collect_events_from_dirs()
 
-    dirs = sys.argv[1:]
-    merged_data = collect_events_from_dirs(dirs)
-
-    # Lưu ra 1 file tổng
-    output_file = "all_people_events.json"
+    # Lưu ra file tổng
+    output_file = "Showbiz.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(merged_data, f, ensure_ascii=False, indent=4)
 
-    print("Đã gộp xong, file output:", output_file)
+    print(f"\n✓ Đã gộp xong!")
+    print(f"✓ Tổng số người: {len(merged_data)}")
+    for person, info in merged_data.items():
+        print(f"  - {person}: {len(info['events'])} sự kiện")
+    print(f"✓ File output: {output_file}")
 
 
 if __name__ == "__main__":
