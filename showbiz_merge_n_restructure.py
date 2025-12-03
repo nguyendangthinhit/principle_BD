@@ -20,31 +20,10 @@ def parse_filename(filename):
     return person, event
 
 
-def remove_empty_comments(data):
-    """
-    Xóa field 'comments': [] rỗng trong tất cả các comment
-    """
-    if isinstance(data, dict):
-        # Xóa field "comments" nếu nó rỗng
-        if "comments" in data and not data["comments"]:
-            data.pop("comments", None)
-        
-        # Đệ quy xử lý các giá trị con
-        for key, value in list(data.items()):
-            remove_empty_comments(value)
-    
-    elif isinstance(data, list):
-        # Đệ quy xử lý từng phần tử trong list
-        for item in data:
-            remove_empty_comments(item)
-    
-    return data
-
-
 def collect_events_from_dirs():
     """
     Scan 3 thư mục: duy/FilteredDetails, huy, thien
-    Gộp theo cấu trúc: name -> events
+    Gộp theo cấu trúc: name -> events (mỗi event có postTitle và comments)
     """
     dirs = [
         "duy/FilteredDetails",
@@ -77,10 +56,7 @@ def collect_events_from_dirs():
 
             try:
                 with open(file_path, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                
-                # Xóa tất cả "comments": [] rỗng
-                data = remove_empty_comments(data)
+                    comments_list = json.load(f)
                 
             except Exception as e:
                 print(f"Lỗi đọc {file_path}: {e}")
@@ -88,21 +64,56 @@ def collect_events_from_dirs():
 
             # Khởi tạo cấu trúc cho người này nếu chưa có
             if person not in people_data:
-                people_data[person] = {
-                    "name": person,
-                    "events": []
-                }
+                people_data[person] = []
 
-            # Thêm sự kiện
-            event_obj = {
-                "event": event_id,
-                "comments": data
-            }
+            # Kiểm tra comments_list phải là list
+            if not isinstance(comments_list, list):
+                print(f"File {entry} không phải list, bỏ qua")
+                continue
 
-            people_data[person]["events"].append(event_obj)
-            print(f"  + Thêm: {person} - {event_id}")
+            # Gom comment theo postTitle
+            posts_dict = {}
+            
+            for cmt in comments_list:
+                if not isinstance(cmt, dict):
+                    continue
+                
+                # Lấy postTitle
+                post_title = cmt.get("postTitle") or cmt.get("posttitle") or "UNKNOWN_POST_TITLE"
+                
+                # Copy comment và bỏ field postTitle
+                cmt_clean = dict(cmt)
+                cmt_clean.pop("postTitle", None)
+                cmt_clean.pop("posttitle", None)
+                
+                # Xóa field "comments": [] nếu có và rỗng
+                if "comments" in cmt_clean and not cmt_clean["comments"]:
+                    cmt_clean.pop("comments", None)
+                
+                # Thêm vào group
+                posts_dict.setdefault(post_title, []).append(cmt_clean)
+            
+            # Chuyển posts_dict thành events list
+            for post_title, comments in posts_dict.items():
+                if comments:  # Chỉ thêm nếu có comments
+                    event_obj = {
+                        "events": event_id,
+                        "postTitle": post_title,
+                        "comments": comments
+                    }
+                    people_data[person].append(event_obj)
 
-    return people_data
+            print(f"  + Thêm: {person} - {event_id} ({len(posts_dict)} posts)")
+
+    # Chuyển sang cấu trúc cuối cùng
+    final_data = []
+    for person, events_list in people_data.items():
+        final_data.append({
+            "name": person,
+            "events": events_list
+        })
+
+    return final_data
 
 
 def main():
@@ -117,8 +128,8 @@ def main():
 
     print(f"\n✓ Đã gộp xong!")
     print(f"✓ Tổng số người: {len(merged_data)}")
-    for person, info in merged_data.items():
-        print(f"  - {person}: {len(info['events'])} sự kiện")
+    for person_data in merged_data:
+        print(f"  - {person_data['name']}: {len(person_data['events'])} bài post")
     print(f"✓ File output: {output_file}")
 
 
