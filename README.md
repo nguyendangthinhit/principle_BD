@@ -83,10 +83,10 @@ Và để vào đúng **thư mục tên của mình**.
 
 Khi cào, nhớ lấy đủ 7 trường sau:
 
-1. `acctachments`  
+1. `commentsCount`
 2. `comments`  
 3. `text`  
 4. `profileName`  
 5. `postTitle`  
 6. `parentRely`  
-7. `likesCount`, `commentsCount`
+7. `likesCount`
