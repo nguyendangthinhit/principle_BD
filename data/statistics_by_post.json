@@ -1,0 +1,147 @@
+{
+  "overall_statistics": {
+    "total_comments": 449,
+    "total_likes": 2917,
+    "avg_likes": 6.5,
+    "median_likes": 0,
+    "total_posts": 6,
+    "total_authors": 386,
+    "type_distribution": {
+      "Đồng tình (Type 2)": 43,
+      "Phản đối (Type 3)": 11,
+      "Góp ý (Type 4)": 395
+    },
+    "type_percentages": {
+      "Đồng tình (Type 2) (%)": 9.58,
+      "Phản đối (Type 3) (%)": 2.45,
+      "Góp ý (Type 4) (%)": 87.97
+    },
+    "avg_likes_by_type": {
+      "Đồng tình": 12.3,
+      "Phản đối": 16.64,
+      "Góp ý": 5.58
+    }
+  },
+  "post_statistics": [
+    {
+      "post_title": "Bộ Giáo dục lấy ý kiến về việc BỎ hình thức tuyển sinh bằng xét tuyển học bạ",
+      "total_comments": 239,
+      "total_likes": 1097,
+      "type_distribution": {
+        "Đồng tình (Type 2)": 37,
+        "Phản đối (Type 3)": 11,
+        "Góp ý (Type 4)": 191
+      },
+      "type_percentages": {
+        "Đồng tình (Type 2) (%)": 15.48,
+        "Phản đối (Type 3) (%)": 4.6,
+        "Góp ý (Type 4) (%)": 79.92
+      },
+      "avg_likes_by_type": {
+        "Đồng tình": 10.57,
+        "Phản đối": 16.64,
+        "Góp ý": 2.74
+      }
+    },
+    {
+      "post_title": "Việc thí điểm tổ chức kỳ thi tốt nghiệp THPT trên máy tính từ năm 2027 sẽ được thực hiện tại một số địa phương có đủ điều kiện cơ sở vật chất và kỹ thuật.\n\nMỗi thí sinh một đề thi riêng, biết điểm ngay sau khi nộp bài và tiết kiệm nhân lực, chi phí. \n\nTheo: VTV Online",
+      "total_comments": 111,
+      "total_likes": 1007,
+      "type_distribution": {
+        "Đồng tình (Type 2)": 5,
+        "Phản đối (Type 3)": 0,
+        "Góp ý (Type 4)": 106
+      },
+      "type_percentages": {
+        "Đồng tình (Type 2) (%)": 4.5,
+        "Phản đối (Type 3) (%)": 0.0,
+        "Góp ý (Type 4) (%)": 95.5
+      },
+      "avg_likes_by_type": {
+        "Đồng tình": 27.4,
+        "Phản đối": 0,
+        "Góp ý": 8.21
+      }
+    },
+    {
+      "post_title": "📊 🧑‍💻 🇻🇳 👩‍💻 🛰\nDự kiến bổ sung môn Tin học thành MÔN BẮT BUỘC trong Chương trình bồi dưỡng kiến thức văn hóa dự bị đại học",
+      "total_comments": 58,
+      "total_likes": 370,
+      "type_distribution": {
+        "Đồng tình (Type 2)": 1,
+        "Phản đối (Type 3)": 0,
+        "Góp ý (Type 4)": 57
+      },
+      "type_percentages": {
+        "Đồng tình (Type 2) (%)": 1.72,
+        "Phản đối (Type 3) (%)": 0.0,
+        "Góp ý (Type 4) (%)": 98.28
+      },
+      "avg_likes_by_type": {
+        "Đồng tình": 1.0,
+        "Phản đối": 0,
+        "Góp ý": 6.47
+      }
+    },
+    {
+      "post_title": "Nhiều thí sinh hốt hoảng vì đã được thông báo đỗ trường Đại học Giao thông Vận tải TP HCM nhưng bị \"đánh trượt\" trên hệ thống của Bộ GD & ĐT. Nhà trường đang xem xét hỗ trợ với hướng đảm bảo quyền...",
+      "total_comments": 23,
+      "total_likes": 59,
+      "type_distribution": {
+        "Đồng tình (Type 2)": 0,
+        "Phản đối (Type 3)": 0,
+        "Góp ý (Type 4)": 23
+      },
+      "type_percentages": {
+        "Đồng tình (Type 2) (%)": 0.0,
+        "Phản đối (Type 3) (%)": 0.0,
+        "Góp ý (Type 4) (%)": 100.0
+      },
+      "avg_likes_by_type": {
+        "Đồng tình": 0,
+        "Phản đối": 0,
+        "Góp ý": 2.57
+      }
+    },
+    {
+      "post_title": "👩🏻‍🏫🌏 ĐƯA TIẾNG ANH THÀNH NGÔN NGỮ THỨ HAI TRONG TRƯỜNG HỌC: đến năm 2030, cần bổ sung khoảng 12.000 giáo viên tiếng Anh mầm non, gần 10.000 giáo viên tiếng Anh tiểu học, bồi dưỡng ít nhất 200.000 giáo viên có khả năng giảng dạy bằng tiếng Anh.",
+      "total_comments": 16,
+      "total_likes": 116,
+      "type_distribution": {
+        "Đồng tình (Type 2)": 0,
+        "Phản đối (Type 3)": 0,
+        "Góp ý (Type 4)": 16
+      },
+      "type_percentages": {
+        "Đồng tình (Type 2) (%)": 0.0,
+        "Phản đối (Type 3) (%)": 0.0,
+        "Góp ý (Type 4) (%)": 100.0
+      },
+      "avg_likes_by_type": {
+        "Đồng tình": 0,
+        "Phản đối": 0,
+        "Góp ý": 7.25
+      }
+    },
+    {
+      "post_title": "Từ nay đến năm 2030, Hà Nội sẽ di dời khối đại học chính quy, đông sinh viên ra khỏi nội đô. Còn ở trong nội thành, các trường vẫn được giữ lại làm trung tâm nghiên cứu, đào tạo sau đại học, hợp tác...",
+      "total_comments": 2,
+      "total_likes": 268,
+      "type_distribution": {
+        "Đồng tình (Type 2)": 0,
+        "Phản đối (Type 3)": 0,
+        "Góp ý (Type 4)": 2
+      },
+      "type_percentages": {
+        "Đồng tình (Type 2) (%)": 0.0,
+        "Phản đối (Type 3) (%)": 0.0,
+        "Góp ý (Type 4) (%)": 100.0
+      },
+      "avg_likes_by_type": {
+        "Đồng tình": 0,
+        "Phản đối": 0,
+        "Góp ý": 134.0
+      }
+    }
+  ]
+}
