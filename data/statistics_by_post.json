@@ -27,6 +27,10 @@
       "post_title": "Bộ Giáo dục lấy ý kiến về việc BỎ hình thức tuyển sinh bằng xét tuyển học bạ",
       "total_comments": 239,
       "total_likes": 1097,
+      "avg_likes": 4.59,
+      "median_likes": 0,
+      "max_likes": 164,
+      "min_likes": 0,
       "type_distribution": {
         "Đồng tình (Type 2)": 37,
         "Phản đối (Type 3)": 11,
@@ -41,12 +45,36 @@
         "Đồng tình": 10.57,
         "Phản đối": 16.64,
         "Góp ý": 2.74
-      }
+      },
+      "top_3_comments": [
+        {
+          "author": "Nguyễn Tấn Vân Xuân",
+          "likes": 164,
+          "text": "- Thi là hình thức công bằng nhất, các em có nền căn bản tốt không bao giờ lo việc thi cử.\n- Xét học...",
+          "type": "Đồng tình"
+        },
+        {
+          "author": "Nguyễn Zen",
+          "likes": 161,
+          "text": "Học bạ cũng là sự nổ lực của các con . Con các vị học ko giỏi bằng con ngt . Rồi các vị kiu bỏ sao ....",
+          "type": "Phản đối"
+        },
+        {
+          "author": "Hồng Mon",
+          "likes": 99,
+          "text": "Sử dụng 1 phương thức xét tuyển tổng hợp như trường ĐH Bách Khoa là công bằng nhất: Điểm thi + Học B...",
+          "type": "Góp ý"
+        }
+      ]
     },
     {
       "post_title": "Việc thí điểm tổ chức kỳ thi tốt nghiệp THPT trên máy tính từ năm 2027 sẽ được thực hiện tại một số địa phương có đủ điều kiện cơ sở vật chất và kỹ thuật.\n\nMỗi thí sinh một đề thi riêng, biết điểm ngay sau khi nộp bài và tiết kiệm nhân lực, chi phí. \n\nTheo: VTV Online",
       "total_comments": 111,
       "total_likes": 1007,
+      "avg_likes": 9.07,
+      "median_likes": 0,
+      "max_likes": 419,
+      "min_likes": 0,
       "type_distribution": {
         "Đồng tình (Type 2)": 5,
         "Phản đối (Type 3)": 0,
@@ -61,12 +89,36 @@
         "Đồng tình": 27.4,
         "Phản đối": 0,
         "Góp ý": 8.21
-      }
+      },
+      "top_3_comments": [
+        {
+          "author": "Anh Tuấn Triệu",
+          "likes": 419,
+          "text": "cho chết tại chỗ luôn chứ ko cần chờ đợi nữa =)))) rất nhân văn",
+          "type": "Góp ý"
+        },
+        {
+          "author": "Đặng Tiến Mạnh",
+          "likes": 123,
+          "text": "Nên bỏ kỳ thi tốt nghiệp. Đã hoàn thành hết lớp 12 là hoàn thành chương trình học rồi. Đỡ tốn kém và...",
+          "type": "Đồng tình"
+        },
+        {
+          "author": "Phạm Ngọc Ba",
+          "likes": 87,
+          "text": "Thi trên máy, không chung đề chung đợt đã là ko công bằng rồi, hãy nhìn vào kết quả kì thi đánh giá ...",
+          "type": "Góp ý"
+        }
+      ]
     },
     {
-      "post_title": "📊 🧑‍💻 🇻🇳 👩‍💻 🛰\nDự kiến bổ sung môn Tin học thành MÔN BẮT BUỘC trong Chương trình bồi dưỡng kiến thức văn hóa dự bị đại học",
+      "post_title": "\nDự kiến bổ sung môn Tin học thành MÔN BẮT BUỘC trong Chương trình bồi dưỡng kiến thức văn hóa dự bị đại học",
       "total_comments": 58,
       "total_likes": 370,
+      "avg_likes": 6.38,
+      "median_likes": 1,
+      "max_likes": 159,
+      "min_likes": 0,
       "type_distribution": {
         "Đồng tình (Type 2)": 1,
         "Phản đối (Type 3)": 0,
@@ -81,12 +133,36 @@
         "Đồng tình": 1.0,
         "Phản đối": 0,
         "Góp ý": 6.47
-      }
+      },
+      "top_3_comments": [
+        {
+          "author": "Lorr Gary",
+          "likes": 159,
+          "text": "Cải cách thì cải cách luôn từ cấp 1 các bác à, tuổi đó dễ tiếp thu nhất. Chứ giờ ba mẹ đóng tiền mà ...",
+          "type": "Góp ý"
+        },
+        {
+          "author": "Linh Nguyen",
+          "likes": 91,
+          "text": "Đây là chương trình dự bị đại học mà các thánh, có phải dành cho THPT đâu mà cứ xoắn hết lên. Nhưng ...",
+          "type": "Góp ý"
+        },
+        {
+          "author": "Nguyen Sơn",
+          "likes": 20,
+          "text": "môn công dân dạy cho học sinh tuân thủ pháp luật và các luật cực kỳ cơ bản là đc rồi. Còn học chuyên...",
+          "type": "Góp ý"
+        }
+      ]
     },
     {
       "post_title": "Nhiều thí sinh hốt hoảng vì đã được thông báo đỗ trường Đại học Giao thông Vận tải TP HCM nhưng bị \"đánh trượt\" trên hệ thống của Bộ GD & ĐT. Nhà trường đang xem xét hỗ trợ với hướng đảm bảo quyền...",
       "total_comments": 23,
       "total_likes": 59,
+      "avg_likes": 2.57,
+      "median_likes": 0,
+      "max_likes": 29,
+      "min_likes": 0,
       "type_distribution": {
         "Đồng tình (Type 2)": 0,
         "Phản đối (Type 3)": 0,
@@ -101,12 +177,36 @@
         "Đồng tình": 0,
         "Phản đối": 0,
         "Góp ý": 2.57
-      }
+      },
+      "top_3_comments": [
+        {
+          "author": "Ngoc Thyy",
+          "likes": 29,
+          "text": "khổ quâ tr oi e đậu uth với 1100+ mà mãi vẫn k thấy thông báo đậu, web trường thì lúc trước tra có t...",
+          "type": "Góp ý"
+        },
+        {
+          "author": "Thanh Thanh",
+          "likes": 14,
+          "text": "Thi cử, có điểm, có công thức tính điểm xét tuyển, trường công bố điểm chuẩn là tự bản thân mình bít...",
+          "type": "Góp ý"
+        },
+        {
+          "author": "Trần Tiến Phát",
+          "likes": 7,
+          "text": "Vụ UTH – Part 2\nHôm nay là ngày 26, còn đúng 4 ngày nữa cổng Bộ sẽ đóng cổng, và ai đỗ trường nào th...",
+          "type": "Góp ý"
+        }
+      ]
     },
     {
-      "post_title": "👩🏻‍🏫🌏 ĐƯA TIẾNG ANH THÀNH NGÔN NGỮ THỨ HAI TRONG TRƯỜNG HỌC: đến năm 2030, cần bổ sung khoảng 12.000 giáo viên tiếng Anh mầm non, gần 10.000 giáo viên tiếng Anh tiểu học, bồi dưỡng ít nhất 200.000 giáo viên có khả năng giảng dạy bằng tiếng Anh.",
+      "post_title": " ĐƯA TIẾNG ANH THÀNH NGÔN NGỮ THỨ HAI TRONG TRƯỜNG HỌC: đến năm 2030, cần bổ sung khoảng 12.000 giáo viên tiếng Anh mầm non, gần 10.000 giáo viên tiếng Anh tiểu học, bồi dưỡng ít nhất 200.000 giáo viên có khả năng giảng dạy bằng tiếng Anh.",
       "total_comments": 16,
       "total_likes": 116,
+      "avg_likes": 7.25,
+      "median_likes": 1,
+      "max_likes": 55,
+      "min_likes": 0,
       "type_distribution": {
         "Đồng tình (Type 2)": 0,
         "Phản đối (Type 3)": 0,
@@ -121,12 +221,36 @@
         "Đồng tình": 0,
         "Phản đối": 0,
         "Góp ý": 7.25
-      }
+      },
+      "top_3_comments": [
+        {
+          "author": "Bộ Giáo dục và Đào tạo",
+          "likes": 55,
+          "text": " TRIỂN KHAI PHÙ HỢP THEO VÙNG MIỀN, BẮT ĐẦU TỪ LÀM QUEN Ở BẬC MẦM NON, TIẾN TỚI PHỔ CẬP RỘNG HƠN Ở T...",
+          "type": "Góp ý"
+        },
+        {
+          "author": "Lưu Duyên Anita",
+          "likes": 34,
+          "text": "Tôi là GV cũng được coi là lớn tuổi, dạy môn KHTN. Tôi ủng hộ việc dạy các môn Toán, Khoa học tự nhi...",
+          "type": "Góp ý"
+        },
+        {
+          "author": "Phượng Trung",
+          "likes": 14,
+          "text": "GV đang “hót” cần có những quy định về tuyển đầu vào ĐH hợp xu thế hơn",
+          "type": "Góp ý"
+        }
+      ]
     },
     {
       "post_title": "Từ nay đến năm 2030, Hà Nội sẽ di dời khối đại học chính quy, đông sinh viên ra khỏi nội đô. Còn ở trong nội thành, các trường vẫn được giữ lại làm trung tâm nghiên cứu, đào tạo sau đại học, hợp tác...",
       "total_comments": 2,
       "total_likes": 268,
+      "avg_likes": 134.0,
+      "median_likes": 134,
+      "max_likes": 204,
+      "min_likes": 64,
       "type_distribution": {
         "Đồng tình (Type 2)": 0,
         "Phản đối (Type 3)": 0,
@@ -141,7 +265,21 @@
         "Đồng tình": 0,
         "Phản đối": 0,
         "Góp ý": 134.0
-      }
+      },
+      "top_3_comments": [
+        {
+          "author": "Lê Dũng",
+          "likes": 204,
+          "text": "Nên di dời hết ra khỏi thủ đô và tp HCM. Phần lớn sinh viên từ tỉnh lẻ chứ k phải thủ đô hay tp HCM",
+          "type": "Góp ý"
+        },
+        {
+          "author": "Phú Quý",
+          "likes": 64,
+          "text": "Nên chuyển các trường đại học ra ngoài trung tâm tp hà nội. Để cho hà nội sạch bầu khí quyển hơn",
+          "type": "Góp ý"
+        }
+      ]
     }
   ]
 }
