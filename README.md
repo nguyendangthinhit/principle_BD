@@ -1,3 +1,27 @@
+Đôi lời gửi ae 😃
+Đây là dự án của môn thầy Long. Mục tiêu của dự án là xây dựng một ứng dụng chat bot hoàn chỉnh từ khâu thu thập dữ liệu, tiền xử lý, tinh chỉnh mô hình cho đến triển khai giao diện người dùng.
+
+Nội dung chính
+Thu thập dữ liệu (Data Acquisition): Bộ dữ liệu gồm khoảng XX,XXX mẫu (tuỳ dự án cụ thể).
+
+Tiền xử lý & Phân tích (EDA): Làm sạch dữ liệu, trực quan hóa và phân tích đặc trưng.
+
+Sử dụng RAG, build trên nền tảng n8n.
+
+Giao diện người dùng (UI): Messenger.
+
+Kiểm thử & Cải tiến: Đánh giá hiệu năng, tinh chỉnh tham số và cải thiện kết quả.
+
+Công nghệ sử dụng
+Ngôn ngữ: Python
+
+Thư viện: TensorFlow / PyTorch, Scikit-learn, Pandas, Matplotlib
+
+Công cụ: Jupyter Notebook, GitHub, VS Code
+
+Triển khai: Flask / Streamlit cho giao diện người dùng
+
+Kết quả
 # 📁 Folder chứa dữ liệu của nhóm
 
 > ⚠️ **Nhớ pull dữ liệu về trước rồi hãy push nhaaaaaaaaaaaa!!!!!!!!!!!!!!!!!**  
@@ -39,7 +63,7 @@ link: <link>
 ...
 (nội dung file .json)
 ...
-Nội dung bài viết: <nội dung ở trỏng>
+Nội dung bài viết: <nội dung ở trỏng>__
 ```
 
 ### 🔸 Note:
